@@ -22,7 +22,7 @@
 &nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="TextBoxContraseña" runat="server" Width="311px" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxContraseña" ErrorMessage="Contraseña Requerida" ForeColor="Red">*</asp:RequiredFieldValidator>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBoxContraseña" ErrorMessage="La contraseña debe contener una mayúscula, una minúscula y un número" ForeColor="Red" ValidationExpression="^(?:.*(?=[A-Z]).*(?=[a-z]).*(?=[0-9]).*|.*(?=[a-z]).*(?=[0-9]).*(?=[A-Z]).*|.*(?=[0-9]).*(?=[A-Z]).*(?=[a-z]).*|.*(?=[a-z]).*(?=[A-Z]).*(?=[0-9]).*)$"></asp:RegularExpressionValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBoxContraseña" ErrorMessage="La contraseña debe contener una mayúscula, una minúscula y un número" ForeColor="Red" ValidationExpression="^(?:.*(?=[A-Z]).*(?=[a-z]).*(?=[0-9]).*|.*(?=[a-z]).*(?=[0-9]).*(?=[A-Z]).*|.*(?=[0-9]).*(?=[A-Z]).*(?=[a-z]).*|.*(?=[a-z]).*(?=[A-Z]).*(?=[0-9]).*)$" Enabled="False"></asp:RegularExpressionValidator>
         <br />
         <br />
 &nbsp;&nbsp;&nbsp;

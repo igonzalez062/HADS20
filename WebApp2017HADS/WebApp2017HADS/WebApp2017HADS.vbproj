@@ -45,6 +45,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -81,21 +82,28 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppUsuarioYaRegistrado.aspx" />
+    <Content Include="Alumno\Alumno.aspx" />
     <Content Include="CambiarPassword.aspx" />
+    <Content Include="Imagenes\TextFile1.txt" />
+    <Content Include="Profesor\InsertarTarea.aspx" />
+    <Content Include="Alumno\InstanciarTarea.aspx" />
+    <Content Include="Profesor\Profesor.aspx" />
+    <Content Include="Profesor\VerEstadisticas.aspx" />
     <Content Include="ResultadoCambioPassword.aspx" />
     <Content Include="Confirmar.aspx" />
     <Content Include="Inicio.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="ResultadoRegistroHecho.aspx" />
+    <Content Include="Alumno\TareasAlumno.aspx" />
+    <Content Include="Profesor\TareasProfesor.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppUsuarioYaRegistrado.aspx.designer.vb">
-      <DependentUpon>AppUsuarioYaRegistrado.aspx</DependentUpon>
+    <Compile Include="Alumno\Alumno.aspx.designer.vb">
+      <DependentUpon>Alumno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AppUsuarioYaRegistrado.aspx.vb">
-      <DependentUpon>AppUsuarioYaRegistrado.aspx</DependentUpon>
+    <Compile Include="Alumno\Alumno.aspx.vb">
+      <DependentUpon>Alumno.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="CambiarPassword.aspx.designer.vb">
@@ -103,6 +111,34 @@
     </Compile>
     <Compile Include="CambiarPassword.aspx.vb">
       <DependentUpon>CambiarPassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\InsertarTarea.aspx.designer.vb">
+      <DependentUpon>InsertarTarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\InsertarTarea.aspx.vb">
+      <DependentUpon>InsertarTarea.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Alumno\InstanciarTarea.aspx.designer.vb">
+      <DependentUpon>InstanciarTarea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\InstanciarTarea.aspx.vb">
+      <DependentUpon>InstanciarTarea.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\Profesor.aspx.designer.vb">
+      <DependentUpon>Profesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\Profesor.aspx.vb">
+      <DependentUpon>Profesor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\VerEstadisticas.aspx.designer.vb">
+      <DependentUpon>VerEstadisticas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\VerEstadisticas.aspx.vb">
+      <DependentUpon>VerEstadisticas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ResultadoCambioPassword.aspx.designer.vb">
@@ -159,6 +195,20 @@
       <DependentUpon>ResultadoRegistroHecho.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Alumno\TareasAlumno.aspx.designer.vb">
+      <DependentUpon>TareasAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alumno\TareasAlumno.aspx.vb">
+      <DependentUpon>TareasAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Profesor\TareasProfesor.aspx.designer.vb">
+      <DependentUpon>TareasProfesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor\TareasProfesor.aspx.vb">
+      <DependentUpon>TareasProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -173,8 +223,8 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\PublishProfiles\1617HADS20 - FTP.pubxml" />
-    <None Include="My Project\PublishProfiles\1617HADS20 - Web Deploy.pubxml" />
+    <None Include="My Project\PublishProfiles\2017HADS20F2 - FTP.pubxml" />
+    <None Include="My Project\PublishProfiles\2017HADS20F2 - Web Deploy.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -193,6 +243,7 @@
       <Name>LibreriaFunciones</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -218,7 +269,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>1775</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:1231/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

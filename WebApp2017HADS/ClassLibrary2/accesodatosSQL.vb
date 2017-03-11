@@ -9,8 +9,8 @@ Public Class accesodatosSQL
             'Conexion a la base de Datos de la Facultad
             'conexion.ConnectionString = "Data Source=158.227.106.20;Initial Catalog=HADS20_Usuarios;User ID=HADS20;Password=ballena"
 
-            'Conexion a la base de Datos de Azure
-            conexion.ConnectionString = "Server=tcp:1617hads20.database.windows.net,1433;Initial Catalog=HADS20_Usuarios;Persist Security Info=False;User ID=hads20@1617hads20;Password=Ballena1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30"
+            'Conexion a la base de Datos de Azure (Fase 2 - Usuarios + Tareas)
+            conexion.ConnectionString = "Server=tcp:1617hads20f2.database.windows.net,1433;Initial Catalog=HADS20_F2;Persist Security Info=False;User ID=hads20@1617hads20f2;Password=Ballena1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30"
 
             conexion.Open()
         Catch ex As Exception
@@ -61,6 +61,21 @@ Public Class accesodatosSQL
         Else
             Return False
         End If
+    End Function
+
+    Public Shared Function tipoUsuarioLogin(ByVal email As String) As String
+        Dim reader As SqlDataReader
+        Dim st = "select tipo from Usuarios where email='" & email & "'"
+
+        comando = New SqlCommand(st, conexion)
+        reader = comando.ExecuteReader()
+
+        If reader.Read Then
+            Return reader("tipo")
+        Else
+            Return False
+        End If
+
     End Function
 
     Public Shared Function confirmarUsuario(ByVal email As String, ByVal numconf As String) As Boolean
