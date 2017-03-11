@@ -6,9 +6,49 @@ WebApp2017HADS
 </name>
 </assembly>
 <members>
-<member name="F:WebApp2017HADS.Profesor.form1">
+<member name="F:WebApp2017HADS.RegistroHecho.form1">
 	<summary>
 Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApp2017HADS.RegistroHecho.Label1">
+	<summary>
+Control Label1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApp2017HADS.RegistroHecho.LinkButtonInicio">
+	<summary>
+Control LinkButtonInicio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApp2017HADS.CambioPassword.form1">
+	<summary>
+Control form1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApp2017HADS.CambioPassword.Label1">
+	<summary>
+Control Label1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:WebApp2017HADS.CambioPassword.LinkButtonInicio">
+	<summary>
+Control LinkButtonInicio.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -118,7 +158,7 @@ Control LinkButtonOlvidadoContraseña.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApp2017HADS.Alumno.form1">
+</member><member name="F:WebApp2017HADS.AppUsuarioYaRegistrado.form1">
 	<summary>
 Control form1.
 </summary>
@@ -126,57 +166,9 @@ Control form1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:WebApp2017HADS.TareasAlumno.form1">
-	<summary>
-control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.TareasProfesor.form1">
-	<summary>
-control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.InsertarTarea.form1">
-	<summary>
-control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.InstanciarTarea.form1">
-	<summary>
-control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.CambioPassword.form1">
-	<summary>
-Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.CambioPassword.Label1">
+</member><member name="F:WebApp2017HADS.AppUsuarioYaRegistrado.Label1">
 	<summary>
 Control Label1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.CambioPassword.LinkButtonInicio">
-	<summary>
-Control LinkButtonInicio.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -425,30 +417,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:WebApp2017HADS.Registro.ButtonVolver">
 	<summary>
 Control ButtonVolver.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.RegistroHecho.form1">
-	<summary>
-Control form1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.RegistroHecho.Label1">
-	<summary>
-Control Label1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:WebApp2017HADS.RegistroHecho.LinkButtonInicio">
-	<summary>
-Control LinkButtonInicio.
 </summary>
 	<remarks>
 Campo generado automáticamente.

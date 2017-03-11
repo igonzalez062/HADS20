@@ -9,12 +9,8 @@
         Dim resultado As String
 
         resultado = LibreriaFunciones.Funciones.loginUsuario(TextBoxEmail.Text, TextBoxContraseña.Text)
-        If resultado = "P" Then
-            Session("UserID") = TextBoxEmail.Text
-            Response.Redirect("./Profesor/Profesor.aspx")
-        ElseIf resultado = "A" Then
-            Session("UserID") = TextBoxEmail.Text
-            Response.Redirect("./Alumno/Alumno.aspx")
+        If resultado = "OK" Then
+            Response.Redirect("./AppUsuarioYaRegistrado.aspx")
         ElseIf resultado = "ERRORDATOSINCORRECTOS" Then
             LabelError.Text = "DATOS INCORRECTOS"
         ElseIf resultado = "ERRORNOUSER" Then

@@ -67,7 +67,7 @@ Public Class Funciones
     End Function
 
     Public Shared Function loginUsuario(ByVal username As String, ByVal password As String) As String
-        Dim resconectar, esta3 As String
+        Dim resconectar As String
         Dim esta, esta2 As Boolean
 
         resconectar = LibreriaAccesoDatos.accesodatosSQL.conectar()
@@ -75,12 +75,10 @@ Public Class Funciones
             esta = LibreriaAccesoDatos.accesodatosSQL.comprobarSiEstaEmail(username)
             If esta Then
                 esta2 = LibreriaAccesoDatos.accesodatosSQL.comprobarUsuario(username, password)
+                LibreriaAccesoDatos.accesodatosSQL.cerrarconexion()
                 If esta2 Then
-                    esta3 = LibreriaAccesoDatos.accesodatosSQL.tipoUsuarioLogin(username)
-                    LibreriaAccesoDatos.accesodatosSQL.cerrarconexion()
-                    Return esta3
+                    Return "OK"
                 Else
-                    LibreriaAccesoDatos.accesodatosSQL.cerrarconexion()
                     Return "ERRORDATOSINCORRECTOS"
                 End If
             Else
@@ -172,7 +170,5 @@ Public Class Funciones
             Return "ERRORAPERTURADECONEXION"
         End If
     End Function
-
-
 
 End Class
